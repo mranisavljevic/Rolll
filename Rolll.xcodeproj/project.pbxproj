@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90506CE61C30846B00792DFB /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90506CE41C30846B00792DFB /* Fabric.framework */; };
+		90506CE71C30846B00792DFB /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90506CE51C30846B00792DFB /* Crashlytics.framework */; };
 		908FCDEE1C3082DD000FE6A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FCDED1C3082DD000FE6A5 /* AppDelegate.swift */; };
 		908FCDF31C3082DD000FE6A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908FCDF11C3082DD000FE6A5 /* Main.storyboard */; };
 		908FCDF61C3082DD000FE6A5 /* Rolll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 908FCDF41C3082DD000FE6A5 /* Rolll.xcdatamodeld */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		90506CE41C30846B00792DFB /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		90506CE51C30846B00792DFB /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		908FCDEA1C3082DD000FE6A5 /* Rolll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rolll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		908FCDED1C3082DD000FE6A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		908FCDF21C3082DD000FE6A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90506CE71C30846B00792DFB /* Crashlytics.framework in Frameworks */,
+				90506CE61C30846B00792DFB /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90506CE81C30847200792DFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90506CE41C30846B00792DFB /* Fabric.framework */,
+				90506CE51C30846B00792DFB /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		908FCDE11C3082DD000FE6A5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,7 @@
 				908FCE041C3082DD000FE6A5 /* RolllTests */,
 				908FCE0F1C3082DD000FE6A5 /* RolllUITests */,
 				908FCDEB1C3082DD000FE6A5 /* Products */,
+				90506CE81C30847200792DFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +183,7 @@
 				908FCDE61C3082DD000FE6A5 /* Sources */,
 				908FCDE71C3082DD000FE6A5 /* Frameworks */,
 				908FCDE81C3082DD000FE6A5 /* Resources */,
+				90506CE31C30845500792DFB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -282,6 +299,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90506CE31C30845500792DFB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run d2670f4cba4ee6201633340ca53ec0ea2488d3b5 54ee1ec56bbcd4d9f0cc28b0d615c86f8b9a3f6f15a6e8be64d51b2850a70aa9";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		908FCDE61C3082DD000FE6A5 /* Sources */ = {
@@ -431,6 +464,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Rolll/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -443,6 +480,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Rolll/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -518,6 +559,7 @@
 				908FCE171C3082DD000FE6A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		908FCE181C3082DD000FE6A5 /* Build configuration list for PBXNativeTarget "RolllTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +568,7 @@
 				908FCE1A1C3082DD000FE6A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		908FCE1B1C3082DD000FE6A5 /* Build configuration list for PBXNativeTarget "RolllUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +577,7 @@
 				908FCE1D1C3082DD000FE6A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
