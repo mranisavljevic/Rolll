@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		908FCDEE1C3082DD000FE6A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FCDED1C3082DD000FE6A5 /* AppDelegate.swift */; };
+		908FCDF31C3082DD000FE6A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908FCDF11C3082DD000FE6A5 /* Main.storyboard */; };
+		908FCDF61C3082DD000FE6A5 /* Rolll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 908FCDF41C3082DD000FE6A5 /* Rolll.xcdatamodeld */; };
+		908FCDF81C3082DD000FE6A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908FCDF71C3082DD000FE6A5 /* Assets.xcassets */; };
+		908FCDFB1C3082DD000FE6A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908FCDF91C3082DD000FE6A5 /* LaunchScreen.storyboard */; };
+		908FCE061C3082DD000FE6A5 /* RolllTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FCE051C3082DD000FE6A5 /* RolllTests.swift */; };
+		908FCE111C3082DD000FE6A5 /* RolllUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FCE101C3082DD000FE6A5 /* RolllUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		908FCE021C3082DD000FE6A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 908FCDE21C3082DD000FE6A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 908FCDE91C3082DD000FE6A5;
+			remoteInfo = Rolll;
+		};
+		908FCE0D1C3082DD000FE6A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 908FCDE21C3082DD000FE6A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 908FCDE91C3082DD000FE6A5;
+			remoteInfo = Rolll;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		908FCDEA1C3082DD000FE6A5 /* Rolll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rolll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		908FCDED1C3082DD000FE6A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		908FCDF21C3082DD000FE6A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		908FCDF51C3082DD000FE6A5 /* Rolll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rolll.xcdatamodel; sourceTree = "<group>"; };
+		908FCDF71C3082DD000FE6A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		908FCDFA1C3082DD000FE6A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		908FCDFC1C3082DD000FE6A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		908FCE011C3082DD000FE6A5 /* RolllTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RolllTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		908FCE051C3082DD000FE6A5 /* RolllTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolllTests.swift; sourceTree = "<group>"; };
+		908FCE071C3082DD000FE6A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		908FCE0C1C3082DD000FE6A5 /* RolllUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RolllUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		908FCE101C3082DD000FE6A5 /* RolllUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolllUITests.swift; sourceTree = "<group>"; };
+		908FCE121C3082DD000FE6A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		908FCDE71C3082DD000FE6A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		908FCDFE1C3082DD000FE6A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		908FCE091C3082DD000FE6A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		908FCDE11C3082DD000FE6A5 = {
+			isa = PBXGroup;
+			children = (
+				908FCDEC1C3082DD000FE6A5 /* Rolll */,
+				908FCE041C3082DD000FE6A5 /* RolllTests */,
+				908FCE0F1C3082DD000FE6A5 /* RolllUITests */,
+				908FCDEB1C3082DD000FE6A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		908FCDEB1C3082DD000FE6A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				908FCDEA1C3082DD000FE6A5 /* Rolll.app */,
+				908FCE011C3082DD000FE6A5 /* RolllTests.xctest */,
+				908FCE0C1C3082DD000FE6A5 /* RolllUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		908FCDEC1C3082DD000FE6A5 /* Rolll */ = {
+			isa = PBXGroup;
+			children = (
+				908FCE201C308327000FE6A5 /* App */,
+				908FCE1F1C308322000FE6A5 /* View */,
+				908FCE211C30832D000FE6A5 /* Core Data */,
+				908FCE1E1C308314000FE6A5 /* Supporting Files */,
+			);
+			path = Rolll;
+			sourceTree = "<group>";
+		};
+		908FCE041C3082DD000FE6A5 /* RolllTests */ = {
+			isa = PBXGroup;
+			children = (
+				908FCE051C3082DD000FE6A5 /* RolllTests.swift */,
+				908FCE071C3082DD000FE6A5 /* Info.plist */,
+			);
+			path = RolllTests;
+			sourceTree = "<group>";
+		};
+		908FCE0F1C3082DD000FE6A5 /* RolllUITests */ = {
+			isa = PBXGroup;
+			children = (
+				908FCE101C3082DD000FE6A5 /* RolllUITests.swift */,
+				908FCE121C3082DD000FE6A5 /* Info.plist */,
+			);
+			path = RolllUITests;
+			sourceTree = "<group>";
+		};
+		908FCE1E1C308314000FE6A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				908FCDF71C3082DD000FE6A5 /* Assets.xcassets */,
+				908FCDFC1C3082DD000FE6A5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		908FCE1F1C308322000FE6A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				908FCDF11C3082DD000FE6A5 /* Main.storyboard */,
+				908FCDF91C3082DD000FE6A5 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		908FCE201C308327000FE6A5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				908FCDED1C3082DD000FE6A5 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		908FCE211C30832D000FE6A5 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				908FCDF41C3082DD000FE6A5 /* Rolll.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		908FCDE91C3082DD000FE6A5 /* Rolll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 908FCE151C3082DD000FE6A5 /* Build configuration list for PBXNativeTarget "Rolll" */;
+			buildPhases = (
+				908FCDE61C3082DD000FE6A5 /* Sources */,
+				908FCDE71C3082DD000FE6A5 /* Frameworks */,
+				908FCDE81C3082DD000FE6A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rolll;
+			productName = Rolll;
+			productReference = 908FCDEA1C3082DD000FE6A5 /* Rolll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		908FCE001C3082DD000FE6A5 /* RolllTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 908FCE181C3082DD000FE6A5 /* Build configuration list for PBXNativeTarget "RolllTests" */;
+			buildPhases = (
+				908FCDFD1C3082DD000FE6A5 /* Sources */,
+				908FCDFE1C3082DD000FE6A5 /* Frameworks */,
+				908FCDFF1C3082DD000FE6A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				908FCE031C3082DD000FE6A5 /* PBXTargetDependency */,
+			);
+			name = RolllTests;
+			productName = RolllTests;
+			productReference = 908FCE011C3082DD000FE6A5 /* RolllTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		908FCE0B1C3082DD000FE6A5 /* RolllUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 908FCE1B1C3082DD000FE6A5 /* Build configuration list for PBXNativeTarget "RolllUITests" */;
+			buildPhases = (
+				908FCE081C3082DD000FE6A5 /* Sources */,
+				908FCE091C3082DD000FE6A5 /* Frameworks */,
+				908FCE0A1C3082DD000FE6A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				908FCE0E1C3082DD000FE6A5 /* PBXTargetDependency */,
+			);
+			name = RolllUITests;
+			productName = RolllUITests;
+			productReference = 908FCE0C1C3082DD000FE6A5 /* RolllUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		908FCDE21C3082DD000FE6A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = creeperspeak;
+				TargetAttributes = {
+					908FCDE91C3082DD000FE6A5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					908FCE001C3082DD000FE6A5 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 908FCDE91C3082DD000FE6A5;
+					};
+					908FCE0B1C3082DD000FE6A5 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 908FCDE91C3082DD000FE6A5;
+					};
+				};
+			};
+			buildConfigurationList = 908FCDE51C3082DD000FE6A5 /* Build configuration list for PBXProject "Rolll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 908FCDE11C3082DD000FE6A5;
+			productRefGroup = 908FCDEB1C3082DD000FE6A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				908FCDE91C3082DD000FE6A5 /* Rolll */,
+				908FCE001C3082DD000FE6A5 /* RolllTests */,
+				908FCE0B1C3082DD000FE6A5 /* RolllUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		908FCDE81C3082DD000FE6A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				908FCDFB1C3082DD000FE6A5 /* LaunchScreen.storyboard in Resources */,
+				908FCDF81C3082DD000FE6A5 /* Assets.xcassets in Resources */,
+				908FCDF31C3082DD000FE6A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		908FCDFF1C3082DD000FE6A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		908FCE0A1C3082DD000FE6A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		908FCDE61C3082DD000FE6A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				908FCDF61C3082DD000FE6A5 /* Rolll.xcdatamodeld in Sources */,
+				908FCDEE1C3082DD000FE6A5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		908FCDFD1C3082DD000FE6A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				908FCE061C3082DD000FE6A5 /* RolllTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		908FCE081C3082DD000FE6A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				908FCE111C3082DD000FE6A5 /* RolllUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		908FCE031C3082DD000FE6A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 908FCDE91C3082DD000FE6A5 /* Rolll */;
+			targetProxy = 908FCE021C3082DD000FE6A5 /* PBXContainerItemProxy */;
+		};
+		908FCE0E1C3082DD000FE6A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 908FCDE91C3082DD000FE6A5 /* Rolll */;
+			targetProxy = 908FCE0D1C3082DD000FE6A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		908FCDF11C3082DD000FE6A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				908FCDF21C3082DD000FE6A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		908FCDF91C3082DD000FE6A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				908FCDFA1C3082DD000FE6A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		908FCE131C3082DD000FE6A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		908FCE141C3082DD000FE6A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		908FCE161C3082DD000FE6A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rolll/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creeperspeak.Rolll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		908FCE171C3082DD000FE6A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rolll/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creeperspeak.Rolll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		908FCE191C3082DD000FE6A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RolllTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creeperspeak.RolllTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rolll.app/Rolll";
+			};
+			name = Debug;
+		};
+		908FCE1A1C3082DD000FE6A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RolllTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creeperspeak.RolllTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rolll.app/Rolll";
+			};
+			name = Release;
+		};
+		908FCE1C1C3082DD000FE6A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RolllUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creeperspeak.RolllUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rolll;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		908FCE1D1C3082DD000FE6A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RolllUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creeperspeak.RolllUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rolll;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		908FCDE51C3082DD000FE6A5 /* Build configuration list for PBXProject "Rolll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				908FCE131C3082DD000FE6A5 /* Debug */,
+				908FCE141C3082DD000FE6A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		908FCE151C3082DD000FE6A5 /* Build configuration list for PBXNativeTarget "Rolll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				908FCE161C3082DD000FE6A5 /* Debug */,
+				908FCE171C3082DD000FE6A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		908FCE181C3082DD000FE6A5 /* Build configuration list for PBXNativeTarget "RolllTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				908FCE191C3082DD000FE6A5 /* Debug */,
+				908FCE1A1C3082DD000FE6A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		908FCE1B1C3082DD000FE6A5 /* Build configuration list for PBXNativeTarget "RolllUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				908FCE1C1C3082DD000FE6A5 /* Debug */,
+				908FCE1D1C3082DD000FE6A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		908FCDF41C3082DD000FE6A5 /* Rolll.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				908FCDF51C3082DD000FE6A5 /* Rolll.xcdatamodel */,
+			);
+			currentVersion = 908FCDF51C3082DD000FE6A5 /* Rolll.xcdatamodel */;
+			path = Rolll.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 908FCDE21C3082DD000FE6A5 /* Project object */;
+}
