@@ -15,6 +15,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var rollTableView: UITableView!
     
+    //MARK: Lifecycle Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpFetchedResultController()
@@ -24,6 +26,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    //MARK: Setup Functions
     
     func setUpFetchedResultController() {
         let rollFetchRequest = NSFetchRequest(entityName: "Roll")
@@ -37,6 +41,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func setUpTableView() {
         self.rollTableView.delegate = self
         self.rollTableView.dataSource = self
+        let nib = UINib(nibName: "RollTableViewCell", bundle: NSBundle.mainBundle())
+        self.rollTableView.registerNib(nib, forCellReuseIdentifier: "RollTableViewCell")
     }
     
    //MARK: NSFetchedResultsControllerDelegate
