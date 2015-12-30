@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
-    <elements/>
+    <entity name="Camera" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Lens" inverseName="camera" inverseEntity="Lens" syncable="YES"/>
+        <relationship name="rolls" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Roll" inverseName="camera" inverseEntity="Roll" syncable="YES"/>
+    </entity>
+    <entity name="Lens" syncable="YES">
+        <relationship name="camera" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Camera" inverseName="lenses" inverseEntity="Camera" syncable="YES"/>
+    </entity>
+    <entity name="Roll" syncable="YES">
+        <attribute name="rollDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="camera" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Camera" inverseName="rolls" inverseEntity="Camera" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Roll" positionX="-216" positionY="-9" width="128" height="73"/>
+        <element name="Camera" positionX="-54" positionY="-9" width="128" height="103"/>
+        <element name="Lens" positionX="-47" positionY="158" width="128" height="58"/>
+    </elements>
 </model>
