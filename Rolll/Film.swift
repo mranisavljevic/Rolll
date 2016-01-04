@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Crashlytics
 
 
 class Film: NSManagedObject {
@@ -25,6 +26,7 @@ class Film: NSManagedObject {
         newObject.iso = iso
         newObject.exposureCount = exposureCount
         newObject.developingProcess = developingProcess
+        Answers.logCustomEventWithName("NewFilmSaved", customAttributes: ["brand" : brand, "type" : type, "iso" : iso, "developingProcess" : developingProcess, "exposureCount" : exposureCount])
         delegate.saveContext()
     }
 

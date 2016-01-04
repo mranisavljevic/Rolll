@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import Crashlytics
 
 class Roll: NSManagedObject {
     
@@ -25,6 +25,7 @@ class Roll: NSManagedObject {
         newRoll.startDate = NSDate()
         newRoll.inCamera = true
         newRoll.exposed = 0
+        Answers.logCustomEventWithName("NewRollCreated", customAttributes: nil)
         delegate.saveContext()
     }
 

@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import Crashlytics
 
 class DeveloperLab: NSManagedObject {
 
@@ -24,6 +24,7 @@ class DeveloperLab: NSManagedObject {
         newDeveloperLab.address = address
         newDeveloperLab.phone = phone
         newDeveloperLab.email = email
+        Answers.logCustomEventWithName("NewLabSaved", customAttributes: ["name" : name, "address" : address, "phone" : phone, "email" : email])
         delegate.saveContext()
     }
 

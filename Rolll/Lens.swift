@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import Crashlytics
 
 class Lens: NSManagedObject {
 
@@ -23,6 +23,7 @@ class Lens: NSManagedObject {
         newLens.make = make
         newLens.model = model
         newLens.focalLength = focalLength
+        Answers.logCustomEventWithName("NewLensSaved", customAttributes: ["make" : make, "model" : model, "focalLength" : focalLength])
         delegate.saveContext()
     }
 

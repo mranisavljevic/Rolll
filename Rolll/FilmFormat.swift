@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import Crashlytics
 
 class FilmFormat: NSManagedObject {
 
@@ -21,6 +21,7 @@ class FilmFormat: NSManagedObject {
             return
         }
         newFilmFormat.format = filmFormat
+        Answers.logCustomEventWithName("NewFilmFormatSaved", customAttributes: ["format" : filmFormat])
         delegate.saveContext()
     }
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Crashlytics
 
 
 class Camera: NSManagedObject {
@@ -23,6 +24,7 @@ class Camera: NSManagedObject {
         newObject.make = make
         newObject.model = model
         newObject.cameraDescription = cameraDescription
+        Answers.logCustomEventWithName("NewCameraSaved", customAttributes: ["make" : make, "model" : model, "cameraDescription" : cameraDescription])
         delegate.saveContext()
     }
     
