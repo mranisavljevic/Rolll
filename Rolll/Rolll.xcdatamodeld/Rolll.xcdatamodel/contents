@@ -2,6 +2,7 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
     <entity name="ApertureStop" syncable="YES">
         <attribute name="apertureStop" attributeType="Float" minValueString="0.5" maxValueString="256" syncable="YES"/>
+        <relationship name="exposures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exposure" inverseName="apertureStop" inverseEntity="Exposure" syncable="YES"/>
         <relationship name="lens" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Lens" inverseName="apertureStops" inverseEntity="Lens" syncable="YES"/>
     </entity>
     <entity name="Camera" syncable="YES">
@@ -9,6 +10,7 @@
         <attribute name="loaded" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="make" attributeType="String" syncable="YES"/>
         <attribute name="model" attributeType="String" syncable="YES"/>
+        <relationship name="exposures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exposure" inverseName="camera" inverseEntity="Exposure" syncable="YES"/>
         <relationship name="filmFormats" toMany="YES" deletionRule="Nullify" destinationEntity="FilmFormat" inverseName="cameras" inverseEntity="FilmFormat" syncable="YES"/>
         <relationship name="lenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Lens" inverseName="cameras" inverseEntity="Lens" syncable="YES"/>
         <relationship name="rolls" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Roll" inverseName="camera" inverseEntity="Roll" syncable="YES"/>
@@ -21,6 +23,14 @@
         <relationship name="rolls" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Roll" inverseName="developerLab" inverseEntity="Roll" syncable="YES"/>
     </entity>
     <entity name="Exposure" syncable="YES">
+        <attribute name="exposureDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exposureTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" minValueString="1" maxValueString="100" syncable="YES"/>
+        <relationship name="apertureStop" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ApertureStop" inverseName="exposures" inverseEntity="ApertureStop" syncable="YES"/>
+        <relationship name="camera" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Camera" inverseName="exposures" inverseEntity="Camera" syncable="YES"/>
+        <relationship name="film" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Film" inverseName="exposures" inverseEntity="Film" syncable="YES"/>
+        <relationship name="lens" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lens" inverseName="exposures" inverseEntity="Lens" syncable="YES"/>
         <relationship name="roll" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Roll" inverseName="exposures" inverseEntity="Roll" syncable="YES"/>
     </entity>
     <entity name="Film" syncable="YES">
@@ -29,6 +39,7 @@
         <attribute name="exposureCount" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="iso" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="type" attributeType="String" syncable="YES"/>
+        <relationship name="exposures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exposure" inverseName="film" inverseEntity="Exposure" syncable="YES"/>
         <relationship name="filmFormat" maxCount="1" deletionRule="Nullify" destinationEntity="FilmFormat" inverseName="film" inverseEntity="FilmFormat" syncable="YES"/>
         <relationship name="rolls" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Roll" inverseName="film" inverseEntity="Roll" syncable="YES"/>
     </entity>
@@ -43,6 +54,7 @@
         <attribute name="model" attributeType="String" syncable="YES"/>
         <relationship name="apertureStops" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ApertureStop" inverseName="lens" inverseEntity="ApertureStop" syncable="YES"/>
         <relationship name="cameras" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Camera" inverseName="lenses" inverseEntity="Camera" syncable="YES"/>
+        <relationship name="exposures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exposure" inverseName="lens" inverseEntity="Exposure" syncable="YES"/>
     </entity>
     <entity name="Roll" syncable="YES">
         <attribute name="developedDate" optional="YES" attributeType="Date" syncable="YES"/>
@@ -59,13 +71,13 @@
         <relationship name="film" maxCount="1" deletionRule="Nullify" destinationEntity="Film" inverseName="rolls" inverseEntity="Film" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Camera" positionX="-54" positionY="-9" width="128" height="148"/>
-        <element name="Film" positionX="-405" positionY="-9" width="128" height="148"/>
-        <element name="Lens" positionX="-18" positionY="189" width="128" height="118"/>
+        <element name="Camera" positionX="-54" positionY="-9" width="128" height="163"/>
+        <element name="Film" positionX="-405" positionY="-9" width="128" height="163"/>
+        <element name="Lens" positionX="-18" positionY="189" width="128" height="133"/>
         <element name="Roll" positionX="-225" positionY="-117" width="128" height="223"/>
-        <element name="Exposure" positionX="-47" positionY="-126" width="128" height="58"/>
-        <element name="FilmFormat" positionX="-209" positionY="180" width="128" height="88"/>
+        <element name="Exposure" positionX="-225" positionY="131" width="128" height="178"/>
+        <element name="FilmFormat" positionX="-225" positionY="452" width="128" height="88"/>
         <element name="DeveloperLab" positionX="-225" positionY="-288" width="128" height="118"/>
-        <element name="ApertureStop" positionX="169" positionY="191" width="128" height="73"/>
+        <element name="ApertureStop" positionX="-225" positionY="333" width="128" height="88"/>
     </elements>
 </model>
