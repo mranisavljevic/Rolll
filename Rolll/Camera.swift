@@ -23,11 +23,7 @@ class Camera: NSManagedObject {
         newObject.make = make
         newObject.model = model
         newObject.cameraDescription = cameraDescription
-        do {
-            try context.save()
-        } catch {
-            print("New Camera object could not be saved.")
-        }
+        delegate.saveContext()
     }
     
 }

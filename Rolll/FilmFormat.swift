@@ -21,11 +21,7 @@ class FilmFormat: NSManagedObject {
             return
         }
         newFilmFormat.format = filmFormat
-        do {
-            try context.save()
-        } catch {
-            print("New FilmFormat object could not be saved.")
-        }
+        delegate.saveContext()
     }
 
 }

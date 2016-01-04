@@ -21,11 +21,7 @@ class ApertureStop: NSManagedObject {
             return
         }
         newObject.apertureStop = apertureStop
-        do {
-            try context.save()
-        } catch {
-            print("New ApertureStop object could not be saved.")
-        }
+        delegate.saveContext()
     }
 
 }

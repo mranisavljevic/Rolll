@@ -24,11 +24,7 @@ class DeveloperLab: NSManagedObject {
         newDeveloperLab.address = address
         newDeveloperLab.phone = phone
         newDeveloperLab.email = email
-        do {
-            try context.save()
-        } catch {
-            print("New DeveloperLab object could not be saved.")
-        }
+        delegate.saveContext()
     }
 
 }

@@ -25,11 +25,7 @@ class Film: NSManagedObject {
         newObject.iso = iso
         newObject.exposureCount = exposureCount
         newObject.developingProcess = developingProcess
-        do {
-            try context.save()
-        } catch {
-            print("New Film object could not be saved.")
-        }
+        delegate.saveContext()
     }
 
 }

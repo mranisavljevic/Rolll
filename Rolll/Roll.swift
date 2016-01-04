@@ -25,11 +25,7 @@ class Roll: NSManagedObject {
         newRoll.startDate = NSDate()
         newRoll.inCamera = true
         newRoll.exposed = 0
-        do {
-            try context.save()
-        } catch {
-            print("New Roll object could not be saved.")
-        }
+        delegate.saveContext()
     }
 
 }

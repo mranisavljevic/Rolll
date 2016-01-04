@@ -23,11 +23,7 @@ class Lens: NSManagedObject {
         newLens.make = make
         newLens.model = model
         newLens.focalLength = focalLength
-        do {
-            try context.save()
-        } catch {
-            print("New Lens object could not be saved.")
-        }
+        delegate.saveContext()
     }
 
 }

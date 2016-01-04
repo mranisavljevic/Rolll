@@ -21,11 +21,7 @@ class Exposure: NSManagedObject {
             return
         }
         newExposure.number = number
-        do {
-            try context.save()
-        } catch {
-            print("New Exposure object could not be saved.")
-        }
+        delegate.saveContext()
     }
 
 }
