@@ -60,10 +60,28 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func controller(controller: NSFetchedResultsController, didChangeSection sectionInfo: NSFetchedResultsSectionInfo, atIndex sectionIndex: Int, forChangeType type: NSFetchedResultsChangeType) {
         //switch on type to deal with insertions/deletions
+        switch type {
+        case NSFetchedResultsChangeType.Insert:
+            print("inserted")
+        case NSFetchedResultsChangeType.Delete:
+            print("deleted")
+        default:
+            print("default")
+        }
     }
     
     func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
         //switch on type and deal with insertions/deletions/updates/moves
+        switch type {
+        case NSFetchedResultsChangeType.Insert:
+            print("inserted")
+        case NSFetchedResultsChangeType.Delete:
+            print("deleted")
+        case NSFetchedResultsChangeType.Update:
+            print("updated")
+        case NSFetchedResultsChangeType.Move:
+            print("moved")
+        }
     }
     
     func controllerDidChangeContent(controller: NSFetchedResultsController) {
