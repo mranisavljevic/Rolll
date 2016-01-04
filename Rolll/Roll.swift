@@ -6,12 +6,26 @@
 //  Copyright © 2016 creeperspeak. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 
 class Roll: NSManagedObject {
-
-// Insert code here to add functionality to your managed object subclass
+    
+    class func newRoll(rollDescription: String, notes: String) {
+        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = delegate.managedObjectContext
+        let newObject = NSEntityDescription.insertNewObjectForEntityForName("Roll", inManagedObjectContext: context)
+        guard let newRoll = newObject as? Roll else {
+            print("New object could not be cast as Roll type.")
+            return
+        }
+        newRoll.rollDescription = rollDescription
+        newRoll.notes = notes
+        newRoll.startDate = NSDate()
+        newRoll.inCamera = true
+        newRoll.exposed = 0
+        delegate.saveContext()
+    }
 
 }

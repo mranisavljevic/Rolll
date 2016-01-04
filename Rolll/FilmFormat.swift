@@ -6,12 +6,22 @@
 //  Copyright © 2016 creeperspeak. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 
 class FilmFormat: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+    class func newFilmFormat(filmFormat: String) {
+        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = delegate.managedObjectContext
+        let newObject = NSEntityDescription.insertNewObjectForEntityForName("FilmFormat", inManagedObjectContext: context)
+        guard let newFilmFormat = newObject as? FilmFormat else {
+            print("New object could not be cast as FilmFormat type.")
+            return
+        }
+        newFilmFormat.format = filmFormat
+        delegate.saveContext()
+    }
 
 }

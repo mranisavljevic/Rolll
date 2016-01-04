@@ -6,12 +6,24 @@
 //  Copyright © 2016 creeperspeak. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 
 class Lens: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+    class func newLens(make: String, model: String, focalLength: String) {
+        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = delegate.managedObjectContext
+        let newObject = NSEntityDescription.insertNewObjectForEntityForName("Lens", inManagedObjectContext: context)
+        guard let newLens = newObject as? Lens else {
+            print("New object could not be cast as Lens type.")
+            return
+        }
+        newLens.make = make
+        newLens.model = model
+        newLens.focalLength = focalLength
+        delegate.saveContext()
+    }
 
 }

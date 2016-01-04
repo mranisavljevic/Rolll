@@ -19,7 +19,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.setUpFetchedResultController()
+        self.setUpFetchedResultController()
         self.setUpTableView()
     }
 
@@ -30,10 +30,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     //MARK: Setup Functions
     
     func setUpFetchedResultController() {
+        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = delegate.managedObjectContext
         let rollFetchRequest = NSFetchRequest(entityName: "Roll")
-        let sortDescriptors = NSSortDescriptor(key: "Camera", ascending: true)
+        let sortDescriptors = NSSortDescriptor(key: "startDate", ascending: true)
         rollFetchRequest.sortDescriptors = [sortDescriptors]
-        self.fetchedResultsController = NSFetchedResultsController(fetchRequest: rollFetchRequest, managedObjectContext: NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.MainQueueConcurrencyType), sectionNameKeyPath: nil, cacheName: nil)
+        self.fetchedResultsController = NSFetchedResultsController(fetchRequest: rollFetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         guard let controller = self.fetchedResultsController else { return }
         controller.delegate = self
         do {
