@@ -16,6 +16,22 @@
 		908FCDFB1C3082DD000FE6A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 908FCDF91C3082DD000FE6A5 /* LaunchScreen.storyboard */; };
 		908FCE061C3082DD000FE6A5 /* RolllTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FCE051C3082DD000FE6A5 /* RolllTests.swift */; };
 		908FCE111C3082DD000FE6A5 /* RolllUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FCE101C3082DD000FE6A5 /* RolllUITests.swift */; };
+		90C08DDB1C3AFEEC009333D1 /* ApertureStop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DCB1C3AFEEC009333D1 /* ApertureStop+CoreDataProperties.swift */; };
+		90C08DDC1C3AFEEC009333D1 /* ApertureStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DCC1C3AFEEC009333D1 /* ApertureStop.swift */; };
+		90C08DDD1C3AFEEC009333D1 /* Film+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DCD1C3AFEEC009333D1 /* Film+CoreDataProperties.swift */; };
+		90C08DDE1C3AFEEC009333D1 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DCE1C3AFEEC009333D1 /* Film.swift */; };
+		90C08DDF1C3AFEEC009333D1 /* Camera+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DCF1C3AFEEC009333D1 /* Camera+CoreDataProperties.swift */; };
+		90C08DE01C3AFEEC009333D1 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DD01C3AFEEC009333D1 /* Camera.swift */; };
+		90C08DE11C3AFEEC009333D1 /* Lens+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DD11C3AFEEC009333D1 /* Lens+CoreDataProperties.swift */; };
+		90C08DE21C3AFEEC009333D1 /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DD21C3AFEEC009333D1 /* Lens.swift */; };
+		90C08DE31C3AFEEC009333D1 /* Exposure+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DD31C3AFEEC009333D1 /* Exposure+CoreDataProperties.swift */; };
+		90C08DE41C3AFEEC009333D1 /* Exposure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DD41C3AFEEC009333D1 /* Exposure.swift */; };
+		90C08DE51C3AFEEC009333D1 /* FilmFormat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DD51C3AFEEC009333D1 /* FilmFormat+CoreDataProperties.swift */; };
+		90C08DE61C3AFEEC009333D1 /* FilmFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DD61C3AFEEC009333D1 /* FilmFormat.swift */; };
+		90C08DE71C3AFEEC009333D1 /* DeveloperLab+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DD71C3AFEEC009333D1 /* DeveloperLab+CoreDataProperties.swift */; };
+		90C08DE81C3AFEEC009333D1 /* DeveloperLab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DD81C3AFEEC009333D1 /* DeveloperLab.swift */; };
+		90C08DE91C3AFEEC009333D1 /* Roll+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DD91C3AFEEC009333D1 /* Roll+CoreDataProperties.swift */; };
+		90C08DEA1C3AFEEC009333D1 /* Roll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C08DDA1C3AFEEC009333D1 /* Roll.swift */; };
 		90F90C4B1C33863A000CD02E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F90C4A1C33863A000CD02E /* HomeViewController.swift */; };
 		90F90C4E1C3394DC000CD02E /* RollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F90C4C1C3394DC000CD02E /* RollTableViewCell.swift */; };
 		90F90C4F1C3394DC000CD02E /* RollTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F90C4D1C3394DC000CD02E /* RollTableViewCell.xib */; };
@@ -54,6 +70,22 @@
 		908FCE0C1C3082DD000FE6A5 /* RolllUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RolllUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		908FCE101C3082DD000FE6A5 /* RolllUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolllUITests.swift; sourceTree = "<group>"; };
 		908FCE121C3082DD000FE6A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90C08DCB1C3AFEEC009333D1 /* ApertureStop+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ApertureStop+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		90C08DCC1C3AFEEC009333D1 /* ApertureStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApertureStop.swift; sourceTree = "<group>"; };
+		90C08DCD1C3AFEEC009333D1 /* Film+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Film+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		90C08DCE1C3AFEEC009333D1 /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		90C08DCF1C3AFEEC009333D1 /* Camera+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Camera+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		90C08DD01C3AFEEC009333D1 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		90C08DD11C3AFEEC009333D1 /* Lens+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lens+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		90C08DD21C3AFEEC009333D1 /* Lens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lens.swift; sourceTree = "<group>"; };
+		90C08DD31C3AFEEC009333D1 /* Exposure+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exposure+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		90C08DD41C3AFEEC009333D1 /* Exposure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exposure.swift; sourceTree = "<group>"; };
+		90C08DD51C3AFEEC009333D1 /* FilmFormat+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FilmFormat+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		90C08DD61C3AFEEC009333D1 /* FilmFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmFormat.swift; sourceTree = "<group>"; };
+		90C08DD71C3AFEEC009333D1 /* DeveloperLab+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeveloperLab+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		90C08DD81C3AFEEC009333D1 /* DeveloperLab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperLab.swift; sourceTree = "<group>"; };
+		90C08DD91C3AFEEC009333D1 /* Roll+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Roll+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		90C08DDA1C3AFEEC009333D1 /* Roll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Roll.swift; sourceTree = "<group>"; };
 		90F90C4A1C33863A000CD02E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		90F90C4C1C3394DC000CD02E /* RollTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollTableViewCell.swift; sourceTree = "<group>"; };
 		90F90C4D1C3394DC000CD02E /* RollTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RollTableViewCell.xib; sourceTree = "<group>"; };
@@ -176,9 +208,33 @@
 		908FCE211C30832D000FE6A5 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				90C08DEB1C3AFF01009333D1 /* Core Data Properties */,
+				90C08DCC1C3AFEEC009333D1 /* ApertureStop.swift */,
+				90C08DCE1C3AFEEC009333D1 /* Film.swift */,
+				90C08DD01C3AFEEC009333D1 /* Camera.swift */,
+				90C08DD21C3AFEEC009333D1 /* Lens.swift */,
+				90C08DD41C3AFEEC009333D1 /* Exposure.swift */,
+				90C08DD61C3AFEEC009333D1 /* FilmFormat.swift */,
+				90C08DD81C3AFEEC009333D1 /* DeveloperLab.swift */,
+				90C08DDA1C3AFEEC009333D1 /* Roll.swift */,
 				908FCDF41C3082DD000FE6A5 /* Rolll.xcdatamodeld */,
 			);
 			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		90C08DEB1C3AFF01009333D1 /* Core Data Properties */ = {
+			isa = PBXGroup;
+			children = (
+				90C08DCB1C3AFEEC009333D1 /* ApertureStop+CoreDataProperties.swift */,
+				90C08DCD1C3AFEEC009333D1 /* Film+CoreDataProperties.swift */,
+				90C08DCF1C3AFEEC009333D1 /* Camera+CoreDataProperties.swift */,
+				90C08DD11C3AFEEC009333D1 /* Lens+CoreDataProperties.swift */,
+				90C08DD31C3AFEEC009333D1 /* Exposure+CoreDataProperties.swift */,
+				90C08DD51C3AFEEC009333D1 /* FilmFormat+CoreDataProperties.swift */,
+				90C08DD71C3AFEEC009333D1 /* DeveloperLab+CoreDataProperties.swift */,
+				90C08DD91C3AFEEC009333D1 /* Roll+CoreDataProperties.swift */,
+			);
+			name = "Core Data Properties";
 			sourceTree = "<group>";
 		};
 		90F90C491C338610000CD02E /* Controller */ = {
@@ -341,8 +397,24 @@
 			files = (
 				908FCDF61C3082DD000FE6A5 /* Rolll.xcdatamodeld in Sources */,
 				908FCDEE1C3082DD000FE6A5 /* AppDelegate.swift in Sources */,
+				90C08DE51C3AFEEC009333D1 /* FilmFormat+CoreDataProperties.swift in Sources */,
 				90F90C4E1C3394DC000CD02E /* RollTableViewCell.swift in Sources */,
+				90C08DE31C3AFEEC009333D1 /* Exposure+CoreDataProperties.swift in Sources */,
+				90C08DE11C3AFEEC009333D1 /* Lens+CoreDataProperties.swift in Sources */,
+				90C08DDC1C3AFEEC009333D1 /* ApertureStop.swift in Sources */,
 				90F90C4B1C33863A000CD02E /* HomeViewController.swift in Sources */,
+				90C08DE91C3AFEEC009333D1 /* Roll+CoreDataProperties.swift in Sources */,
+				90C08DE81C3AFEEC009333D1 /* DeveloperLab.swift in Sources */,
+				90C08DDE1C3AFEEC009333D1 /* Film.swift in Sources */,
+				90C08DE01C3AFEEC009333D1 /* Camera.swift in Sources */,
+				90C08DE71C3AFEEC009333D1 /* DeveloperLab+CoreDataProperties.swift in Sources */,
+				90C08DDD1C3AFEEC009333D1 /* Film+CoreDataProperties.swift in Sources */,
+				90C08DEA1C3AFEEC009333D1 /* Roll.swift in Sources */,
+				90C08DE41C3AFEEC009333D1 /* Exposure.swift in Sources */,
+				90C08DE61C3AFEEC009333D1 /* FilmFormat.swift in Sources */,
+				90C08DDB1C3AFEEC009333D1 /* ApertureStop+CoreDataProperties.swift in Sources */,
+				90C08DDF1C3AFEEC009333D1 /* Camera+CoreDataProperties.swift in Sources */,
+				90C08DE21C3AFEEC009333D1 /* Lens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
