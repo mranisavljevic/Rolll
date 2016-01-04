@@ -6,12 +6,26 @@
 //  Copyright © 2016 creeperspeak. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 
 class Exposure: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+    class func newExposure(number: Int) {
+        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = delegate.managedObjectContext
+        let newObject = NSEntityDescription.insertNewObjectForEntityForName("Exposure", inManagedObjectContext: context)
+        guard let newExposure = newObject as? Exposure else {
+            print("New object could not be cast as Exposure type.")
+            return
+        }
+        newExposure.number = number
+        do {
+            try context.save()
+        } catch {
+            print("New Exposure object could not be saved.")
+        }
+    }
 
 }

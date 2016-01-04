@@ -6,12 +6,28 @@
 //  Copyright © 2016 creeperspeak. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 
 class Camera: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
-
+    class func newCamera(make: String, model: String, cameraDescription: String) {
+        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = delegate.managedObjectContext
+        let newCamera = NSEntityDescription.insertNewObjectForEntityForName("Camera", inManagedObjectContext: context)
+        guard let newObject = newCamera as? Camera else {
+            print("New object could not be cast as Camera type.")
+            return
+        }
+        newObject.make = make
+        newObject.model = model
+        newObject.cameraDescription = cameraDescription
+        do {
+            try context.save()
+        } catch {
+            print("New Camera object could not be saved.")
+        }
+    }
+    
 }

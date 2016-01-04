@@ -6,12 +6,26 @@
 //  Copyright © 2016 creeperspeak. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 
 class ApertureStop: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+    class func newApertureStop(apertureStop: Float) {
+        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = delegate.managedObjectContext
+        let newApertureStop = NSEntityDescription.insertNewObjectForEntityForName("ApertureStop", inManagedObjectContext: context)
+        guard let newObject = newApertureStop as? ApertureStop else {
+            print("New object could not be cast as ApertureStop type.")
+            return
+        }
+        newObject.apertureStop = apertureStop
+        do {
+            try context.save()
+        } catch {
+            print("New ApertureStop object could not be saved.")
+        }
+    }
 
 }
