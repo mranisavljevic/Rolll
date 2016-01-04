@@ -101,6 +101,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RollTableViewCell", forIndexPath: indexPath) as! RollTableViewCell
+        guard let results = self.fetchedResultsController else { return cell }
+        if let roll = results.objectAtIndexPath(indexPath) as? Roll {
+            cell.roll = roll
+        }
+        print(cell.roll?.notes)
         return cell
     }
 

@@ -9,6 +9,12 @@
 import UIKit
 
 class RollTableViewCell: UITableViewCell {
+    
+    var roll: Roll? {
+        didSet {
+            //
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

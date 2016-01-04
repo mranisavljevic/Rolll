@@ -12,17 +12,17 @@ import Crashlytics
 
 class FilmFormat: NSManagedObject {
 
-    class func newFilmFormat(filmFormat: String) {
+    class func newFilmFormat(filmFormat: String) -> FilmFormat? {
         let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = delegate.managedObjectContext
         let newObject = NSEntityDescription.insertNewObjectForEntityForName("FilmFormat", inManagedObjectContext: context)
         guard let newFilmFormat = newObject as? FilmFormat else {
             print("New object could not be cast as FilmFormat type.")
-            return
+            return nil
         }
         newFilmFormat.format = filmFormat
         Answers.logCustomEventWithName("NewFilmFormatSaved", customAttributes: ["format" : filmFormat])
-        delegate.saveContext()
+        return newFilmFormat
     }
 
 }

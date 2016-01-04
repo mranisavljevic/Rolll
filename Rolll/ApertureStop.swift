@@ -12,16 +12,16 @@ import CoreData
 
 class ApertureStop: NSManagedObject {
 
-    class func newApertureStop(apertureStop: Float) {
+    class func newApertureStop(apertureStop: Float) -> ApertureStop? {
         let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = delegate.managedObjectContext
         let newApertureStop = NSEntityDescription.insertNewObjectForEntityForName("ApertureStop", inManagedObjectContext: context)
         guard let newObject = newApertureStop as? ApertureStop else {
             print("New object could not be cast as ApertureStop type.")
-            return
+            return nil
         }
         newObject.apertureStop = apertureStop
-        delegate.saveContext()
+        return newObject
     }
 
 }

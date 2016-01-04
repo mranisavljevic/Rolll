@@ -12,13 +12,13 @@ import Crashlytics
 
 class Roll: NSManagedObject {
     
-    class func newRoll(rollDescription: String, notes: String) {
+    class func newRoll(rollDescription: String, notes: String) -> Roll? {
         let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = delegate.managedObjectContext
         let newObject = NSEntityDescription.insertNewObjectForEntityForName("Roll", inManagedObjectContext: context)
         guard let newRoll = newObject as? Roll else {
             print("New object could not be cast as Roll type.")
-            return
+            return nil
         }
         newRoll.rollDescription = rollDescription
         newRoll.notes = notes
@@ -26,7 +26,7 @@ class Roll: NSManagedObject {
         newRoll.inCamera = true
         newRoll.exposed = 0
         Answers.logCustomEventWithName("NewRollCreated", customAttributes: nil)
-        delegate.saveContext()
+        return newRoll
     }
 
 }

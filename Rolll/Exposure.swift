@@ -12,16 +12,16 @@ import CoreData
 
 class Exposure: NSManagedObject {
 
-    class func newExposure(number: Int) {
+    class func newExposure(number: Int) -> Exposure? {
         let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = delegate.managedObjectContext
         let newObject = NSEntityDescription.insertNewObjectForEntityForName("Exposure", inManagedObjectContext: context)
         guard let newExposure = newObject as? Exposure else {
             print("New object could not be cast as Exposure type.")
-            return
+            return nil
         }
         newExposure.number = number
-        delegate.saveContext()
+        return newExposure
     }
 
 }
